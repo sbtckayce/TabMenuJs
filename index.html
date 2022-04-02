@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tab Menu JS</title>
+</head>
+<body>
+    <section class="container">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#" class="menu-content active" data-filter="all">All</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-content" data-filter="mobile">Mobile</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-content" data-filter="camera">Camera</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-content" data-filter="watch">Watch</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-content" data-filter="shoe">Shoe</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-content" data-filter="headphone">Headphone</a>
+            </li>
+        </ul>
+        <div class="product-list">
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1605546960121-24e957eb8c15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aXBob25lJTIwMTJ8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="camera">
+                <img src="https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtZXJhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="watch">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2F0Y2h8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="shoe">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1491927570842-0261e477d937?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aGVhZHBob25lc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+
+<!-- /// -->
+
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1609686299477-a86c84223d3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aXBob25lJTIwMTJ8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="camera">
+                <img src="https://images.unsplash.com/photo-1491796014055-e6835cdcd4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtZXJhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="watch">
+                <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2F0Y2h8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="shoe">
+                <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHNob2VzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGVhZHBob25lc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+
+<!-- /// -->
+
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1606061587005-c1c57d134082?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="camera">
+                <img src="https://images.unsplash.com/photo-1580707221190-bd94d9087b7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2FtZXJhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="watch">
+                <img src="https://images.unsplash.com/photo-1602752975366-5520991f958d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdhdGNofGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="shoe">
+                <img src="https://images.unsplash.com/photo-1628253747716-0c4f5c90fdda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNob2VzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1579065560489-989b0cc394ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlYWRwaG9uZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+
+
+
+<!-- /// -->
+
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1605457212772-7e5afd088069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="camera">
+                <img src="https://images.unsplash.com/photo-1495745966610-2a67f2297e5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2FtZXJhfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="watch">
+                <img src="https://images.unsplash.com/photo-1506193095-80bc749473f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdhdGNofGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="shoe">
+                <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNob2VzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1630307186909-ba2785e4b5c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlYWRwaG9uZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+
+            
+
+
+<!-- /// -->
+
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1620555576588-a7dd6c04c55d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="camera">
+                <img src="https://images.unsplash.com/photo-1565551069968-949366aa4cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbWVyYXxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="watch">
+                <img src="https://images.unsplash.com/photo-1612786143266-b0363a2f9ca1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHdhdGNofGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="shoe">
+                <img src="https://images.unsplash.com/photo-1512675828443-4f454c42253a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNob2VzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1548378329-437e1ef34263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhlYWRwaG9uZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="mobile">
+                <img src="https://images.unsplash.com/photo-1604409273943-ed5b1a083a51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="product-item" data-item="headphone">
+                <img src="https://images.unsplash.com/photo-1625887453638-3ff3a959f04f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGlwaG9uZSUyMDEyfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+           
+        </div>
+    </section>
+    <script>
+       
+        var menuContent =document.querySelectorAll('.menu-content');
+        
+        var productItem =document.querySelectorAll('.product-item');
+       
+
+       
+
+        // for(let i =0;i<menuContent.length;i++){
+        //     menuContent[i].addEventListener('click',function(){
+        //         for(let j =0;j<menuContent.length;j++){
+        //             menuContent[j].classList.remove('active')
+        //         }
+        //         this.classList.add('active');
+
+        //         let dataFilter =this.getAttribute('data-filter');
+
+        //         for( let k =0;k<productItem.length;k++){
+        //             productItem[k].classList.add('hide');
+                    
+        //             if(productItem[k].getAttribute('data-item')==dataFilter ||
+        //             dataFilter=='all'){
+        //                 productItem[k].classList.remove('hide')
+        //             }
+        //         }
+        //     })
+        // }
+
+        function tabMenu(){
+            menuContent.forEach((item)=>
+            item.classList.remove('active'))
+            this.classList.add('active');
+            let dataFilter =this.getAttribute('data-filter')
+
+            for(let k =0;k<productItem.length;k++){
+                productItem[k].classList.add('hide');
+                if(productItem[k].getAttribute('data-item')==dataFilter ||
+                dataFilter=='all'){
+                    productItem[k].classList.remove('hide')
+                }
+            }
+            
+            
+        }
+        menuContent.forEach((item)=>
+        item.addEventListener('click',tabMenu))
+        
+       
+       
+    </script>
+</body>
+</html>
